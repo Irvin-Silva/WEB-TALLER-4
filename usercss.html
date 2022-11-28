@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="usercss.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="/JS.js"></script>
   <title>Formulario Registro</title>
 </head>
 <body>
@@ -253,14 +256,50 @@
     <option value="YU">Yugoslavia</option>
     <option value="ZM">Zambia</option>
     <option value="ZW">Zimbabue</option>
-</select>
+    </select>
     <input class="input" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+    
+    <h4>¿Desea habilitar el registro de gustos?</h4>
+    <div class="control">
+      <label class="radio">
+        <input type="radio" name="answer">
+        Sí
+      </label>
+      <label class="radio">
+        <input type="radio" name="answer" value="" checked="checked">
+        No
+      </label>
+    </div>
+    <div class="gustos">
+      <h4 for="cars">Seleccione su color favorito: </h4>
+      <input style="margin-bottom: 20px;" type="color" id="favcolor" name="favcolor" value="#ff0000">
+      <h4> Escriba su marca de carro favorita: </h4>
+      <input class="input">
+      <h4> Escriba su estilo de carro favorito: </h4>
+      <input class="input">
+      <h4> Escriba su modelo de carro favorito: </h4>
+      <input class="input">
+
+      <div class="slider">
+
+        <p style="font-size: 16px">Seleccione el rango que quiere pagar: </p>
+      
+        <div class="range-slider">
+          <span class="rangeValues"></span>
+          <input value="10000000" min="10000000" max="600000000" step="500" type="range">
+          <input value="600000000" min="10000000" max="600000000" step="500" type="range">
+        </div>
+      
+      
+
+
+
+    </div>
+   
+    
     <input class="boton" type="submit" value="Registrar">
-
-
-    <div align="center" ><img src="/style/image/logo_negro_vert.png" class="logo" width="200px"></div>
-    <p>By: <a href="https://github.com/Irvin-Silva">Irvin Silva 🚀 </p>
-  </section>
+    <div align="center"><img src="/image/logo_negro_vert.jpg" class="logo" width="200px"></div>
+    </section>
 
 </body>
 </html>
